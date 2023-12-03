@@ -102,6 +102,7 @@
 #logo{
     width: 50%;
     height: 300px;
+<<<<<<< Updated upstream
     transform:translateX(350px);
 }
 
@@ -131,4 +132,17 @@
 
 .logoFatec{
     transform:translateX(120px);
+=======
+    background-color: #2b2929;
+}
+
+.github{
+    background-image: url('imgs/github.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+>>>>>>> Stashed changes
 }
