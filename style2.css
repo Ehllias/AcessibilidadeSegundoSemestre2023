@@ -2,38 +2,50 @@
     margin: 0px;
     padding: 0px;
     background-color: #000000;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, Helvetica;
     }
 
-    a{
-        background-color: #000000;
+    a,nav{
+        background-color: #8d8989;
         color: #ffff;
-        font-family: 'Kanit', sans-serif;
-        font-family: 'Montserrat', sans-serif;
+        font-family: Arial, Helvetica;
         text-decoration:none;
+        margin: 25px;
+        transform: translateX(388px);
+    }
+
+    a:hover{
+        color: yellow;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     header{
         width: 100%;
         height: 100px;
         background-color: #8d8989;
+        align-items: center;
+        overflow-x: hidden;
+        font-size: 20px;
     }
 
-    nav{
-        background-color: #8d8989;
-        font-size: 15px;
+    #foto{
+        width: 370px;
+        height: 370px;
+        border: 5px solid #ffff;
+        border-radius: 185px 185px 185px 185px;
+        display: flex;
+        transform: translateX(220px) ;
     }
-    #pnome,#pturno,#pano{
+
+    #pnome,#hnome{
         position: relative;
         width: 420px;
+        height: 50px;
         margin-left: 150px;
+        transform: translateX(488px) translateY(-350px);
         }
-    
-    #pcurso,.prPessoal,#prAcademico{
-            margin: 150px;
-            margin-top: 75px;
-        }
+
     #psemestre{
             margin-right: 150px;
         }
@@ -53,21 +65,7 @@
 
    main{
     width: 100%;
-    height: 100px;
     background-color: #000000;
-   }
-
-   .container{
-    max-width: 1700px;
-    margin: auto;
-    padding: 50px;
-    overflow: hidden;
-    background-color: #ffff;
-    color: (#000000);
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    font-size: 18px;
    }
 
    h1,h2{
@@ -86,49 +84,69 @@
     margin: 65px;
    }
 
-#foto{
-    width: 370px;
-    height: 370px;
-    border: none;
-    display: flex;
-    transform: translateX(800px) translateY(400px);
-}
-
-/* #hnome,#hcurso{
-    margin: 5px;
-    transform: translateY();
-} */
-
-#logo{
-    width: 50%;
-    height: 300px;
-    transform:translateX(350px);
-}
-
-
-
-.material{
-    background-color: #ffff;
-    color: #000000;
+#material{
+    background-image: url(imgs/alto-contraste.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(254, 254, 254);
     padding: 2px 15px 15px 2px;
     display: inline-block;
     margin: 4px 4px;
     cursor: pointer;
     position: fixed;
     top: 10px;
-    right: 20px;
-    height: 1px;
-    transform: translateY(0px);
+    right: 8px;
+    height: 40px;
+    width: 40px;
+    transform: translateY(10px);
     background-position: center;
     transition: transform 0.3s;
-    text-align: center;
+    border: none;
+    border-radius: 10px;
 }
 
-.material:hover {
-    background-color: #ffff;
-    transform: scale3d(1.07, 1.07, 1.07); 
+#aumentarZoomBtn{
+    background-image: url(imgs/aumentar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2px 15px 15px 2px;
+    display: inline-block;
+    margin: 4px 4px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 8px;
+    height: 40px;
+    width: 40px;
+    transform: translateY(60px);
+    background-position: center;
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 10px;
+}
+    
+#diminuirZoomBtn{
+    background-image: url(imgs/diminuir.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2px 15px 15px 2px;
+    display: inline-block;
+    margin: 4px 4px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 8px;
+    height: 40px;
+    width: 40px;
+    transform: translateY(110px);
+    background-position: center;
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 10px;
 }
 
-.logoFatec{
-    transform:translateX(120px);
+#rodape {
+    transform: translateY(100%);
+    height: 300px;
+    background-color: #2b2929;
 }
